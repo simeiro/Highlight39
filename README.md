@@ -53,9 +53,11 @@ https://discord.com/api/oauth2/authorize?client_id=700404770548088933&permission
 送信時のハイライトになっている曲idをランダムの数の上限にしています。
 
 
-### 参考
+## 参考
 以下の記事を参考にして制作しました。
+
 discord.py - MongoDBをdiscord.pyで使う　https://zenn.dev/mnonamer/articles/f00eb4915d9c0a
+
 RailwayでDiscord Botをホストしてみた　https://zenn.dev/mnonamer/articles/f73386390399f6
 
 
