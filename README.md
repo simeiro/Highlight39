@@ -1,8 +1,10 @@
-# HighlightMIKU(製作中)
+# Highlight39
 
 ## 概要
-  HighlightMIKUは https://vocadb.net/api/ を利用して現在のハイライトボカロ曲を自動送信してくれるDiscordのBotです。
-  vocaDBの情報を利用しているため直近の全ての人気ボカロ曲が自動送信することは保証しません。
+  Highlight39は https://vocadb.net/api/ を利用して現在のハイライトボカロ曲を自動送信してくれるDiscordのBotです。
+  直近の全ての人気ボカロ曲が自動送信することは保証しません。
+  
+  デプロイはrailwayにて行いました。
 
 ## 使用方法
 
@@ -10,7 +12,7 @@
 
 以下のリンクから招待することができます
 
-https://discord.com/api/oauth2/authorize?client_id=700404770548088933&permissions=2048&scope=bot
+https://discord.com/api/oauth2/authorize?client_id=700404770548088933&permissions=76800&scope=bot
 
 
 ### 2招待後
@@ -27,7 +29,7 @@ https://discord.com/api/oauth2/authorize?client_id=700404770548088933&permission
 
 ## コマンド
 
-以下はコマンドの紹介です。接頭辞の39!は省略しています。（◯）はこのコマンドでも同じ内容が実行されることを意味しています。
+以下はコマンドの紹介です。接頭辞の39!は省略しています。（）はこのコマンドでも同じ内容が実行されることを意味しています。
 
 **help**
 
@@ -45,8 +47,15 @@ https://discord.com/api/oauth2/authorize?client_id=700404770548088933&permission
 
 現在のハイライト曲を表示します。**song**後に数字を指定することで数字分の曲を表示します。(例.39!s 10) 数字の範囲は1~20です。数字指定がない場合は5曲分表示されます。APIのリクエスト過多を避けるため、1つのサーバーにつき**random**を含め1日5件までに制限しています。
 
-**random (r)**
+**rand (r)**
 
 ランダムにボカロ曲の情報を取得します。APIのリクエスト過多を避けるため、1つのサーバーにつき**song**を含め1日5件までに制限しています。
 送信時のハイライトになっている曲idをランダムの数の上限にしています。
+
+
+### 参考
+以下の記事を参考にして制作しました。
+discord.py - MongoDBをdiscord.pyで使う　https://zenn.dev/mnonamer/articles/f00eb4915d9c0a
+RailwayでDiscord Botをホストしてみた　https://zenn.dev/mnonamer/articles/f73386390399f6
+
 
